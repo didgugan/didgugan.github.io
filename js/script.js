@@ -1,0 +1,1 @@
+$('#js-photo').animateCss('bounce');
