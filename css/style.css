@@ -52,6 +52,7 @@ body {
 	height: 820px;
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 
 .top-menu-wrap {
@@ -241,8 +242,8 @@ h2 {
 
 .bomb-wrap {
 	display: block;
-	width: 1280px;
 	position: absolute;
+	right: 0;
 	
 }
 
