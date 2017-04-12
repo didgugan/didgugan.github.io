@@ -189,11 +189,14 @@ h2 {
 }
 
 .button1:hover {
-	box-shadow: 0 5px 5px rgba(255,0,0, 0.1);
+	background-color: red;
+	box-shadow: 0 5px 5px rgba(255,0,0, 0.3);
 }
 
 .button2:hover {
-	box-shadow: 0 5px 5px rgba(255,255,255, 0.3);
+	color: red;
+	background-color: #fff;
+	box-shadow: 0 5px 5px rgba(255,255,255, 0.6);
 }
 
 .head-img {
@@ -366,28 +369,46 @@ img.bomb {
 }
 
 .screen4 .col-3 {
-	width: 320px;
+	width: 318px;
 	margin: 0;
-	margin-right: -5px;
+	margin-right: -2px;
 	padding: 0;
+	margin-top: 1px;
 	height: 590px;
 	text-align: center;
 	border-radius: 5px;
 }
 
-.screen4 .article1 {
+.screen4 .col-3:hover img {
+	margin-right: -1px;
+}
+
+
+
+.screen4 .col-3:hover {
 	border: 1px solid #a1a1a1;
+	width: 316px;
+	height: 588px;
+	margin-top: 0;
+	background-color: #eee;
 }
 
 .screen4 .article3 {
 	background-color: #595959;
-	border: 1px solid #a1a1a1;
+	
+	height: 587px;
+	/*border: 1px solid #a1a1a1;*/
+}
+
+.screen4 .article3:hover {
+	background-color: #4c4c4c;
 }
 
 .container4 img {
 	float: right;
 	padding-top: 40px;
 	margin-bottom: 20px;
+
 }
 
 .screen4 .article1 img {
@@ -435,7 +456,9 @@ img.bomb {
 	margin-top: 15px;
 }
 
-
+.screen4 .button1:hover {
+	background-color: red;
+}
 
 .screen5 {
 	background-color: #dedede;
