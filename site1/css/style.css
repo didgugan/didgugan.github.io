@@ -1,0 +1,136 @@
+.header {
+	height: 90px;
+	border-bottom: 1px solid #f0f2f7;
+	width: 100%;
+}
+
+.header-logo {
+	
+}
+
+.header-logo a img {
+	margin-top: 30px;
+	vertical-align: bottom;
+}
+
+.header-top-menu {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.header-top-menu ul {
+	
+	
+	list-style-type: none;
+}
+
+.header-top-menu ul a {
+	text-decoration: none;
+	color: #343e5c;
+	display: inline-block;
+	margin-left: 30px;
+	font-size: 14px;
+	margin-top: 35px;
+	font-weight: 400;
+}
+
+.cart-box {
+	float: right;
+}
+.cart-box_cart {
+	display: inline-block;
+	color:  #343e5b;
+font-size: 11px;/* Приближение из-за подстановки шрифтов */
+font-weight: 400;
+text-align: left;
+text-transform: uppercase;
+}
+
+.cart-box_cart a {
+	color: #343e5c;
+	text-decoration: none;
+}
+
+.cart-box_cart i {
+	margin-top: -2px;
+	padding-right: 8px;
+}
+
+.circle {
+	margin-left: 7px;
+	padding-top: 5px;
+	padding-left: 8px;
+	margin-top: 33px;
+	display: inline-block;
+	-webkit-border-radius: 12px;
+	        border-radius: 12px;
+	background-color: #e3e8f0;
+	width: 24px;
+	height: 24px;
+}
+
+.cart-box_button {
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: Montserrat;
+color:  #343e5b;
+font-size: 11px;
+text-align: center;
+margin-left: 29px;
+}
+
+.cart-box_button a {
+	text-decoration: none;
+	color:  #343e5b;
+	padding: 7px 13px;
+	border: 2px solid #e3e8f0;
+	-webkit-border-radius: 30px;
+	        border-radius: 30px;
+}
+
+.nav {
+	height: 56px;
+}
+
+.section {
+background-color:  #1c1e23;
+height: 500px;
+}
+
+.section h1 {
+	font-family: Montserrat;
+color:  #ffffff;
+font-size: 42px;/* Приближение из-за подстановки шрифтов */
+font-weight: 900;
+text-align: left;
+margin-top: 100px;
+}
+
+.section_paragraph {
+	margin-top: 34px;
+	margin-bottom: 64px;
+	font-family: CrimsonText;
+color:  #ffffff;
+font-size: 16px;/* Приближение из-за подстановки шрифтов */
+line-height: 24px;/* Приближение из-за подстановки шрифтов */
+text-align: left;
+}
+
+.section_button {
+	-webkit-border-radius: 21px;
+	        border-radius: 21px;
+background-color:  #2754eb;
+padding: 15px 50px;
+font-family: Montserrat;
+text-transform: uppercase;
+color:  #ffffff;
+font-size: 12px;
+font-weight: 400;
+text-align: center;
+text-decoration: none;
+
+}
+
+.section_button:hover {
+	text-decoration: none;
+	color: #fff;
+}
