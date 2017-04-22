@@ -1,3 +1,13 @@
+@font-face {
+			font-family: "Arvo";
+			src: url("../fonts/Arvo/ArvoRegular/ArvoRegular.eot");
+			src: url("../fonts/Arvo/ArvoRegular/ArvoRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/Arvo/ArvoRegular/ArvoRegular.woff") format("woff"),
+			url("../fonts/Arvo/ArvoRegular/ArvoRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
 .section-work h2 {
 	font-family: 'Arvo', serif;
 	color: #333366;
