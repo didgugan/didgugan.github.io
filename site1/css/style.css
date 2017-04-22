@@ -1,3 +1,6 @@
+
+
+
 .header {
 	min-height: 90px;
 	border-bottom: 1px solid #f0f2f7;
@@ -9,6 +12,7 @@
 }
 
 .header-logo a img {
+
 	margin-top: 30px;
 	vertical-align: bottom;
 }
@@ -176,9 +180,9 @@ text-decoration: none;
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 11px;
-	float: right;
-	margin-right: 22px;
-	margin-top: 11px;
+	/*float: right;*/
+	margin-right: 25px;
+	margin-top: 21px;
 
 
 }
@@ -199,16 +203,18 @@ text-decoration: none;
 	font-size: 14px;
 	border-left: 1px solid #f0f2f7;
 	border-right: 1px solid #f0f2f7;
-	float: right;
+	/*float: right;*/
 }
 
 .input_button {
+	display: inline-block;
 	width: 13px;
 	margin-left: 20px;
 
 }
 
 .input_search {
+	display: inline-block;
 	margin-top: 15px;
 	margin-left: 2px;
 
@@ -237,6 +243,57 @@ input {
 	color:  #a1a8be;
 }
 
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
 
+}
 
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.header-top-menu ul a {
+		margin-left: 15px;
+		font-size: 13px;
+	}
+
+	.nav_support {
+		margin-right: 50px;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.header-top-menu ul a {
+		margin-left: 5px;
+		font-size: 10px;
+	}
+	.cart-box_cart, .cart-box_button {
+		font-size: 10px;
+		margin-left: 10px;
+	}
+
+	.nav_menu a {
+		margin-left: 5px;
+	}
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.section {
+		background-image: url(../images/iphone_6_space_gray_v3_.RGB_color.0115.png);
+		background-repeat: no-repeat;
+		background-position-x: right;
+
+	}
+
+	.nav_menu a {
+		margin-left: 3px;
+		font-size: 10px;
+	}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
 
