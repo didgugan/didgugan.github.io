@@ -1,12 +1,12 @@
 @font-face {
-			font-family: "Arvo";
-			src: url("../fonts/Arvo/ArvoRegular/ArvoRegular.eot");
-			src: url("../fonts/Arvo/ArvoRegular/ArvoRegular.eot?#iefix")format("embedded-opentype"),
-			url("../fonts/Arvo/ArvoRegular/ArvoRegular.woff") format("woff"),
-			url("../fonts/Arvo/ArvoRegular/ArvoRegular.ttf") format("truetype");
-			font-style: normal;
-			font-weight: normal;
-	}
+	font-family: "Arvo";
+	src: url("../fonts/Arvo/ArvoRegular/ArvoRegular.eot");
+	src: url("../fonts/Arvo/ArvoRegular/ArvoRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Arvo/ArvoRegular/ArvoRegular.woff") format("woff"),
+	url("../fonts/Arvo/ArvoRegular/ArvoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
 
 .section-work h2 {
 	font-family: 'Arvo', serif;
@@ -19,7 +19,7 @@
 }
 
 h3 {
-	font-family: Arvo;
+	font-family: Arvo, serif;
 color:  #333366;
 font-size: 22px;
 font-weight: 400;
@@ -46,7 +46,7 @@ p {
 
 	font-family: 'Noto Sans', sans-serif;
 	color:  #686c8a;
-	font-size: 20px;/* Приближение из-за подстановки шрифтов */
+	font-size: 20px;
 	font-weight: 400;
 	line-height: 30px;
 
