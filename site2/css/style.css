@@ -1,9 +1,9 @@
 @font-face {
 	font-family: "Arvo";
-	src: url("../fonts/Arvo/ArvoRegular/ArvoRegular.eot");
-	src: url("../fonts/Arvo/ArvoRegular/ArvoRegular.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/Arvo/ArvoRegular/ArvoRegular.woff") format("woff"),
-	url("../fonts/Arvo/ArvoRegular/ArvoRegular.ttf") format("truetype");
+	src: url("../fonts/ArvoRegular.eot");
+	src: url("../fonts/ArvoRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ArvoRegular.woff") format("woff"),
+	url("../fonts/ArvoRegular.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
