@@ -29,7 +29,7 @@ header {
 }
 .header-logo a {
   display: block;
-  padding-top: 7px;
+  padding-top: 9px;
   opacity: 0.7;
 }
 .header-logo a:hover {
@@ -51,7 +51,7 @@ header {
 .header-menu-ul li {
   display: inline-block;
   margin: 0;
-  padding: 12px 3px;
+  padding: 15px 3px;
   padding-bottom: 0;
   margin-left: 30px;
 }
@@ -61,7 +61,7 @@ header {
   text-transform: uppercase;
   font-size: 18px;
   font-family: Bebas;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 }
 .header-menu-ul li a:hover {
   color: #ffffff;
@@ -123,12 +123,6 @@ p {
   position: absolute;
   left: 0;
   top: 38px;
-}
-.flover1 {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 38px;
   z-index: 100;
 }
 .flover2 {
@@ -145,6 +139,7 @@ footer {
   width: 100%;
 }
 footer .copyryte {
+  opacity: 0.7;
   position: relative;
   display: inline-block;
   width: 70%;
@@ -183,7 +178,7 @@ footer .socials a:hover {
   left: 0;
   bottom: 0px;
   z-index: 103;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 @media (max-width: 600px) {
   .header-menu-ul li {
