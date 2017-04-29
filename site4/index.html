@@ -2,71 +2,68 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>site1</title>
+	<title>Выставка современного искусства</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<header>
+	<header class="z-index-top">
+		<div class="nav-wrap">
+			<div class="container">
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" alt=""></a>
+				</div>
+				<nav>
+					<ul>
+						<li><a class="active" href="#">информация</a></li>
+						<li><a href="#">участники</a></li>
+						<li><a href="#">программа</a></li>
+						<li><a href="#">контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 		<div class="container">
-			<div class="header-logo">
-				<a href="#">
-					<img src="images/logo.svg" onerror="this.onerror=null; this.src='images/logo.png'">
-				</a>
-
-			</div>
-			<div class="header-menu">
-				<ul class="header-menu-ul">
-					<li><a href="#">информация</a></li>
-					<li><a href="#">участники</a></li>
-					<li><a href="#">программа</a></li>
-					<li><a href="#">контакты</a></li>
-				</ul>
-			</div>
-
-			
+		<h1>Выставка<br> современного<br> искусства</h1>
+		<div class="btn">
+			<a class="btn-info" href="#">информация</a>
+		</div>
 		</div>
 	</header>
-	<section class="header">
-		<div class="header-h1">
-				<h1>Выставка <br>современного<br> искусства</h1>
-				<div class="button">
-					<a href="#">информация</a>
-				</div>
-				
-			</div>
-	</section>
-	<section class="content">
-		<div class="container">
-			<p>
-				15 февраля в 18.30 в арт-пространстве CITYclub состоится торжественное открытие нового масштабного проекта – выставки современного искусства, в которой примут участие ведущие художники Украины. 
-			<p>
-				Общество переживает кризис правды и на пути к освобождению сознания человек встречает немало препятствий. Современная личность вынуждена подстраиваться под требования, ожидания и стереотипы внешнего окружения. Художественный проект Lumen — это попытка художников пролить свет на истинные чувства и желания, душевные качества, которые остались в тени, из-за страха быть отвергнутым.
-			</p>
-		</div>
-		
-	</section>
-	<img class="flover1" src="images/flower1.png" alt="">
-	<img class="flover2" src="images/flower2.png" alt="">
-	
-	<footer>
 
+	<section class="main">
+	<div class="container z-index-top">
+		<p>
+			15 февраля в 18.30 в арт-пространстве CITYclub состоится торжественное открытие нового масштабного проекта – выставки современного искусства, в которой примут участие ведущие художники Украины. 
+		</p>
+		<p>
+			Общество переживает кризис правды и на пути к освобождению сознания человек встречает немало препятствий. Современная личность вынуждена подстраиваться под требования, ожидания и стереотипы внешнего окружения. Художественный проект Lumen — это попытка художников пролить свет на истинные чувства и желания, душевные качества, которые остались в тени, из-за страха быть отвергнутым.
+		</p>
+	</div>
+	</section>
+	<img class="flover1" src="images/flover1.png" alt="flover">
+	<img class="flover2" src="images/flover2.png" alt="flover">
+	<footer>
 	<div class="container">
-		<div class="copyryte">
-			<p><span>горишние плавни 2017г.</span></p>
+		<div class="copy z-index-top">
 			<p>
+				<span>Горишние Плавни 2017г.</span>
 				все права защищены. копирование только с разрешения правообладателя
 			</p>
 		</div>
-		
-		<div class="socials">
-			<a href="#"><img src="images/vk.png" alt="vk"></a>
-			<a href="#"><img src="images/vk.png" alt="vk"></a>
-			<a href="#"><img src="images/vk.png" alt="vk"></a>
-			<a href="#"><img src="images/vk.png" alt="vk"></a>
+		<div class="social z-index-top">
+			<a href="#"><img src="images/vk.png" alt=""></a>
+			<a href="#"><img src="images/fb.png" alt=""></a>
+			<a href="#"><img src="images/fb.png" alt=""></a>
+			<a href="#"><img src="images/fb.png" alt=""></a>
+			<a href="#"><img src="images/fb.png" alt=""></a>
 		</div>
+		<div class="clear"></div>
+
 	</div>
-	<img class="flover3" src="images/flower3.png" alt="">
-	</footer>	
+	<img class="flover3" src="images/flover3.png" alt="flover">
+	</footer>
+	
 </body>
 </html>
