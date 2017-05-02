@@ -1,0 +1,488 @@
+@font-face {
+	font-family: 'Gotham Pro Bold';
+	src: url('../fonts/GothamPro-Bold.eot');
+	src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Bold.woff2') format('woff2'),
+		url('../fonts/GothamPro-Bold.woff') format('woff'),
+		url('../fonts/GothamPro-Bold.ttf') format('truetype'),
+		url('../fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Black';
+	src: url('../fonts/GothamPro-Black.eot');
+	src: url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Black.woff2') format('woff2'),
+		url('../fonts/GothamPro-Black.woff') format('woff'),
+		url('../fonts/GothamPro-Black.ttf') format('truetype'),
+		url('../fonts/GothamPro-Black.svg#GothamPro-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Medium';
+	src: url('../fonts/GothamPro-Medium.eot');
+	src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Medium.woff2') format('woff2'),
+		url('../fonts/GothamPro-Medium.woff') format('woff'),
+		url('../fonts/GothamPro-Medium.ttf') format('truetype'),
+		url('../fonts/GothamPro-Medium.svg#GothamPro-Medium') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@grey: #dedede;
+@white: #fff;
+@text-grey: #515151;
+@h-grey: #4c4c4c;
+@light-gray: #9fa2a5;
+@dark-grey: #202020;
+@bg-2: #f4f4f4;
+@red: #d25b55;
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 98px;
+	font-size: 90px;
+	font-family: 'Gotham Pro Black', sans-serif;
+	color: @white;
+	line-height: 1.1;
+	padding: 0;
+	margin-bottom: 25px;
+}
+
+h2 {
+	font-size: 90px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Gotham Pro Black', sans-serif;
+	line-height: 1.1;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.btn {
+	font-size: 12px;
+	color: @white;
+	text-transform: uppercase;
+	font-family: 'Gotham Pro Medium', sans-serif;
+	letter-spacing: 3px;
+	display: inline-block;
+	text-align: center;
+	
+	
+	&:hover {
+		text-decoration: none;
+		color: @white;
+	}
+}
+
+/*   первый экран.  */
+
+header {
+	background-color: @grey;
+}
+
+.logo {
+	width: 46px;
+	margin-top: 48px;
+	margin-left: 48px;
+}
+
+.cart {
+	width: 46px;
+	float: right;
+	margin-top: 48px;
+	margin-right: 48px;
+}
+
+.menu-wrap {
+	display: block;
+	text-align: center;
+}
+
+.menu {
+	display: block;
+	margin: 66px auto;
+	li {
+		display: inline-block;
+		text-align: center;
+		margin-left: 50px;
+		a {
+			font-size: 14px;
+			font-family: 'Gotham Pro Medium', sans-serif;
+			color: @white;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			position: relative;
+		
+			/*&:hover {
+				text-decoration: none;
+				color: @red;
+			}*/
+
+
+		}
+		a::before {
+			content: '';
+			width: 0px;
+			height: 3px;
+			background-color: red;
+			position: absolute;
+			top: 130%;
+			left: 0;
+			transition: all 0.5s;
+		}
+
+		&:hover a::before {
+			width: 100%;
+			
+		}
+		&:hover {
+			a {
+				text-decoration: none;
+				color: red;
+		}
+			}
+	
+	}
+	}
+
+.menu li:first-child {
+		margin-left: 0;
+	}
+
+
+
+.img-head {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	padding-bottom: 65px;
+	margin-top: 30px;
+}
+
+.p-head {
+	color: @white;
+	text-align: center;
+	font-family: 'Gotham Pro Medium', sans-serif;
+	font-size: 14px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.btn-wrap {
+	display: block;
+	text-align: center;
+	margin-top: 35px;
+}
+
+.btn-head {
+	height: 52px;
+	width: 172px;
+	border-radius: 26px;
+	padding-top: 19px;
+}
+
+.btn-red {
+	background-color: @red;
+	transition: all 0.3s;
+	&:hover {
+		background-color: red;
+		box-shadow: 0 5px 10px rgba(200,0,0,0.3);
+	}
+}
+
+.btn-white {
+	border: 3px solid @white;
+	margin-left: 20px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	padding-top: 16px;
+	transition: all 0.3s;
+	&:hover {
+		background-color: @bg-2;
+		color: @dark-grey;
+		border-color: @dark-grey;
+		box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+	}
+
+}
+
+/*  Второй экран  */
+
+.sec-2 {
+	margin: 0;
+	padding: 0;
+	
+	background: @bg-2 url('../images/Pencils22.png') no-repeat fixed 20% 100%;
+	
+	
+
+}
+
+.sec-2-cont {
+	padding-top: 174px;
+	padding-bottom: 139px;
+	p {
+		font-size: 16px;
+		color: @text-grey;
+		font-family: 'Gotham Pro Medium', sans-serif;
+
+	}
+}
+
+/*  Третий экран  */
+
+.sec-3 {
+	background-color: @grey;
+	position: relative;
+	h2 {
+		
+		color: @white;
+		padding-top: 75px;
+		padding-bottom: 200px;
+		margin: 0;
+	}
+	h3 {
+		text-transform: uppercase;
+		text-align: center;
+		color: @white;
+		font-size: 24px;
+		letter-spacing: 2px;
+		padding-top: 30px;
+		font-family: 'Gotham Pro Bold', sans-serif;
+
+	}
+	p {
+		text-align: center;
+		color: @white;
+		font-size: 21px;
+		font-family: 'Gotham Pro Medium', sans-serif;
+		padding-bottom: 100px;
+	}
+}
+
+.col-1 {
+	background-image: url('../images/lamp.png');
+	background-repeat: no-repeat;
+	background-position: 50% 10%;
+	background-size: 230px;
+	
+}
+
+.col-2 {
+	background: url('../images/star.png') 50% 20% no-repeat;
+	background-size: 250px;
+}
+
+.col-3 {
+	background: url('../images/tools.png') 50% 10% no-repeat;
+	background-size: 250px;
+}
+
+.bomb {
+	position: absolute;
+	top: 0;
+	right: 0;
+	max-width: 100%
+}
+
+.sec-4 {
+	position: relative;
+	padding-bottom: 125px;
+	h2 {
+		margin-bottom: 10px;
+	}
+
+	.h3 {
+		margin-top: 0;
+		text-align: center;
+		font-family: 'Gotham Pro Medium', sans-serif;
+		font-size: 16px;
+		color: @light-gray;
+		margin-bottom: 100px;
+	}
+}
+
+.pen-4 {
+	position: absolute;
+	left: 20px;
+	top: -60px;
+}
+
+.img-wrap {
+	position: relative;
+	height: 300px;
+	img {
+		position: absolute;
+		bottom: 0;
+		left: 20%;
+		width: 250px;
+	}
+}
+
+.ticket {
+	box-sizing: border-box;
+	text-align: center;
+	
+	padding-bottom: 91px;
+	&:hover {
+		border: 1px solid #a1a1a1;
+		border-radius: 5px;
+		margin-top: -1px;
+		box-shadow: 0 0 5px rgba(100,100,100,0.2);
+		background-color: #595959;
+		padding-bottom: 35px;
+		.tick-btn {
+			display: inline-block;
+			
+		}
+		h3 {
+			color: @white;
+		}
+	}
+	
+	h3 {
+		color: @dark-grey;
+		font-size: 14px;
+		text-transform: uppercase;
+		font-family: 'Gotham Pro Black', sans-serif;
+		letter-spacing: 3px;
+	}
+	p {
+		color: @light-gray;
+		font-family: 'Gotham Pro Medium', sans-serif;
+		font-size: 14px;
+		line-height: 26px;
+		
+
+	}
+	.price {
+			font-family: 'Arvo', serif;
+			font-size: 60px;
+			color: @dark-grey;
+			margin-top: 30px;
+			
+
+}
+}
+
+.tick-btn {
+	background-color: @red;
+	padding: 19px 47px;
+	
+	border-radius: 30px;
+	display: none;
+	&:hover {
+		background-color: red;
+		box-shadow: 0 5px 10px rgba(200,0,0,0.3);
+	}
+
+}
+
+.sec-5 {
+	position: relative;
+	h2 {
+		font-size: 60px;
+		text-transform: none;
+		position: relative;
+		z-index: 100;
+		padding-bottom: 100px;
+	}
+	.paper {
+		position: absolute;
+		top: 50px;
+		width: 800px;
+		z-index: 50;
+		left:20%
+
+	}
+}
+
+footer {
+	
+	height: 450px;
+	background-color: @bg-2;
+	.copy {
+		padding-top: 340px;
+		
+		font-size: 12px;
+		font-family: 'Gotham Pro Medium', sans-serif;
+
+	}
+
+}
+.fa-circle {
+	color: #9fa2a5;
+}
+.social {
+	padding-top: 290px;
+	text-align: right;
+	a:hover {
+		.fa-circle {
+	color: @red;
+}
+	}
+}
+
+
+ .card {
+ 	text-align: right;
+ 	margin-top: 15px;
+ 	a {
+ 		margin-left: 5px;
+ 	}
+ }
+
+
+.form-5 {
+	top: -25px;
+	position: relative;
+	z-index: 300;
+	margin: auto;
+	display: block;
+	width: 312px;
+	height: 50px;
+	background: url('../images/form-bg.png') 50% 50% no-repeat;
+	.input {
+		width: 230px;
+		height: 42px;
+		margin-top: 5px;
+		margin-left: 32px;
+		border: none;
+		padding-left: 20px;
+		font-size: 16px;
+	}
+	.btn-form {
+		width: 42px;
+		height: 42px;
+		background-color: @red;
+		border: none;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		float: right;
+		margin-top: 5px;
+		margin-right: 4px;
+		&:hover {
+		background-color: red;
+		box-shadow: 0 0 10px rgba(200,0,0,0.3);
+	}
+
+	}
+
+	.fa-envelope-o {
+		color: @white;
+	}
+}
