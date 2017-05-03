@@ -116,7 +116,7 @@ header {
 	li {
 		display: inline-block;
 		text-align: center;
-		margin-left: 50px;
+		margin: 0 25px;
 		a {
 			font-size: 14px;
 			font-family: 'Gotham Pro Medium', sans-serif;
@@ -251,8 +251,8 @@ header {
 	h2 {
 		
 		color: @white;
-		padding-top: 75px;
-		padding-bottom: 200px;
+		padding-top: 100px;
+		padding-bottom: 150px;
 		margin: 0;
 	}
 	h3 {
@@ -401,7 +401,10 @@ header {
 		z-index: 100;
 		padding-bottom: 100px;
 	}
-	.paper {
+	
+}
+
+.paper {
 		position: absolute;
 		top: 50px;
 		width: 800px;
@@ -409,7 +412,6 @@ header {
 		left:20%
 
 	}
-}
 
 footer {
 	
@@ -486,3 +488,110 @@ footer {
 		color: @white;
 	}
 }
+
+@media (max-width: 1200px) {
+	.sec-3 h2 {
+		padding-top: 130px;
+	}
+
+}
+
+@media (max-width: 992px) {
+	h1, h2 {
+		font-size: 80px;
+	}
+	.logo {
+		margin-left: 10px;
+	}
+	.cart {
+		margin-right: 10px;
+	}
+
+	.p-cont {
+		background-color: rgba(256,256,256, 0.2);
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+	.sec-3 h2 {
+		padding-top: 200px;
+	}
+
+	.sec-5 h2 {
+		font-size: 46px;
+	}
+
+	.paper {
+		width: 600px;
+		left:10%;	
+	}
+}
+
+@media (max-width: 768px) { 
+	h1, h2 {
+		font-size: 60px;
+	}
+
+	.logo, .cart {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.menu {
+		margin-top: 10px;
+		margin-bottom: 20px;
+		li {
+			margin: 0 10px;
+		}
+	}
+	.col-1, .col-2, .col-3 {
+		padding-bottom: 50px;
+		p {
+			width: 70%;
+			margin: auto;
+		}
+	}
+
+	.pen-4 {
+		width: 250px;
+		margin-top: 17px;
+	}
+
+	.sec-5 h2 {
+		font-size: 36px;
+	}
+
+	.paper {
+		width: 500px;
+		left:10%;	
+	}
+
+}
+
+
+@media (max-width: 576px) {
+	h1, h2 {
+		font-size: 42px;
+	}
+	.menu li {
+		margin: 0 5px;
+		a {
+		font-size: 12px;
+		letter-spacing: 0;
+	}
+	}
+	.sec-4 h2 {
+		margin-top: 70px;
+	}
+	.paper {
+		width: 100%;
+		left:0;	
+	}
+}
+
+
+
+
+
+
+
