@@ -34,561 +34,590 @@
 	font-style: normal;
 }
 
-@grey: #dedede;
+@main-bg: #dedede;
 @white: #fff;
-@text-grey: #515151;
-@h-grey: #4c4c4c;
-@light-gray: #9fa2a5;
-@dark-grey: #202020;
-@bg-2: #f4f4f4;
 @red: #d25b55;
+@red-btn: #a9252a;
+@fonts-col: #515151;
+@black: #202020;
+@h-col: #4c4c4c;
+@h3-col: #9fa2a5;
+@card-bg:  #595959;
+@bor-col: #a1a1a1;
+@foot-bg: #f9f9f9;
+@sec-2-bg: #f4f4f4;
 
-h1 {
-	text-align: center;
-	text-transform: uppercase;
-	margin-top: 98px;
-	font-size: 90px;
-	font-family: 'Gotham Pro Black', sans-serif;
-	color: @white;
-	line-height: 1.1;
-	padding: 0;
-	margin-bottom: 25px;
+
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
 }
 
 h2 {
-	font-size: 90px;
-	text-transform: uppercase;
-	text-align: center;
 	font-family: 'Gotham Pro Black', sans-serif;
-	line-height: 1.1;
-}
+	font-size: 80px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: @white;
 
-a {
-	text-decoration: none;
-	&:hover {
-		text-decoration: none;
-	}
 }
 
 .btn {
-	font-size: 12px;
-	color: @white;
-	text-transform: uppercase;
-	font-family: 'Gotham Pro Medium', sans-serif;
-	letter-spacing: 3px;
 	display: inline-block;
+	width: 172px;
+	height: 52px;
 	text-align: center;
-	
-	
+	border-radius: 26px;
+	color: @white;
+	font-family: 'Gotham Pro Bold', sans-serif;
+	font-size: 12px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding-top: 19px;
+	vertical-align: middle;
+	transition: all 0.3s;
 	&:hover {
-		text-decoration: none;
 		color: @white;
+		background-color: @red-btn;
+		box-shadow: 0px 3px 5px rgba(169, 37, 42, 0.5);
+
+
 	}
 }
 
-/*   первый экран.  */
+/*  первый экран. */
 
 header {
-	background-color: @grey;
+	background-color: @main-bg;
+	text-align: center;
+	h1 {		
+		font-family: 'Gotham Pro Black', sans-serif;
+		font-size: 90px;
+		color: @white;
+		text-transform: uppercase;
+		text-align: center;
+		margin-top: 160px;
+		line-height: 1.2;
+		margin-bottom: 25px;
+	}
+}
+
+.descr {
+	color: @white;
+	font-size: 14px;
+	font-family: 'Gotham Pro Medium', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 27px;
+
 }
 
 .logo {
 	width: 46px;
+	height: 46px;
 	margin-top: 48px;
 	margin-left: 48px;
 }
 
 .cart {
-	width: 46px;
 	float: right;
+	width: 46px;
+	height: 46px;
 	margin-top: 48px;
 	margin-right: 48px;
 }
 
-.menu-wrap {
-	display: block;
-	text-align: center;
-}
+
 
 .menu {
 	display: block;
-	margin: 66px auto;
+	text-align: center;
+	margin-top: 66px;
+	padding: 0;
+	
 	li {
+
 		display: inline-block;
 		text-align: center;
-		margin: 0 25px;
+		margin: 0 15px;
+		padding: 0;
+
+		
+
 		a {
 			font-size: 14px;
-			font-family: 'Gotham Pro Medium', sans-serif;
 			color: @white;
-			letter-spacing: 3px;
-			text-transform: uppercase;
+			font-family: 'Gotham Pro Medium', sans-serif;
+			letter-spacing: 4px;
 			position: relative;
-		
-			/*&:hover {
-				text-decoration: none;
-				color: @red;
-			}*/
-
-
-		}
-		a::before {
-			content: '';
-			width: 0px;
-			height: 3px;
-			background-color: red;
-			position: absolute;
-			top: 130%;
-			left: 0;
-			transition: all 0.5s;
-		}
-
-		&:hover a::before {
-			width: 100%;
 			
+			&::after {
+				content: "";
+				position: absolute;
+				display: block;
+				width: 0;
+				height: 3px;
+				left: -2px;
+				top: 130%;				
+				background-color: @red-btn;
+				transition: all 0.5s;
+
+			}
 		}
+
 		&:hover {
 			a {
-				text-decoration: none;
-				color: red;
-		}
+				color: @red-btn;
+				&::after {
+					width: 100%;
+				}
 			}
-	
+		}
+
+
+		
+
 	}
-	}
-
-.menu li:first-child {
-		margin-left: 0;
-	}
-
-
-
-.img-head {
-	display: block;
-	margin: auto;
-	max-width: 100%;
-	padding-bottom: 65px;
-	margin-top: 30px;
 }
 
-.p-head {
-	color: @white;
-	text-align: center;
-	font-family: 'Gotham Pro Medium', sans-serif;
-	font-size: 14px;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	margin-top: 0;
-	padding-top: 0;
-}
-
-.btn-wrap {
-	display: block;
-	text-align: center;
-	margin-top: 35px;
-}
-
-.btn-head {
-	height: 52px;
-	width: 172px;
-	border-radius: 26px;
-	padding-top: 19px;
-}
 
 .btn-red {
 	background-color: @red;
-	transition: all 0.3s;
-	&:hover {
-		background-color: red;
-		box-shadow: 0 5px 10px rgba(200,0,0,0.3);
-	}
 }
 
 .btn-white {
-	border: 3px solid @white;
 	margin-left: 20px;
-	box-sizing: border-box;
-	vertical-align: middle;
 	padding-top: 16px;
-	transition: all 0.3s;
+	border: 3px solid @white;
 	&:hover {
-		background-color: @bg-2;
-		color: @dark-grey;
-		border-color: @dark-grey;
-		box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-	}
+		background-color: #fff;
+		color: @fonts-col;
+		border-color: @fonts-col;
+		box-shadow: 0px 3px 5px rgba(81, 81, 81, 0.5);
 
+
+
+	}
 }
 
-/*  Второй экран  */
+.pens-head {
+	padding-top: 10px;
+	padding-bottom: 65px;
+	max-width: 100%;
+}
+/*  конец первого экрана */
+
+
+/*  второй экран. */
 
 .sec-2 {
 	margin: 0;
 	padding: 0;
-	
-	background: @bg-2 url('../images/Pencils22.png') no-repeat fixed 20% 100%;
-	
-	
-
+	background: @sec-2-bg url('../images/Pencils22.png') 20% 100% no-repeat fixed;
 }
 
 .sec-2-cont {
-	padding-top: 174px;
-	padding-bottom: 139px;
-	p {
-		font-size: 16px;
-		color: @text-grey;
-		font-family: 'Gotham Pro Medium', sans-serif;
+	font-size: 16px;
+	font-family: 'Gotham Pro Medium', sans-serif;
+	color: @fonts-col;
+	margin-top: 174px;
+	margin-bottom: 139px;
 
-	}
 }
 
-/*  Третий экран  */
+/*  конец второго экрана */
+
+/*  третий экран  */
 
 .sec-3 {
-	background-color: @grey;
+	margin: 0;
+	padding: 0;
 	position: relative;
+	text-align: center;
+	background-color: @main-bg;
+	color: @white;
+	padding-bottom: 100px;
 	h2 {
-		
-		color: @white;
-		padding-top: 100px;
-		padding-bottom: 150px;
-		margin: 0;
+		padding-top: 30px;
 	}
 	h3 {
-		text-transform: uppercase;
-		text-align: center;
-		color: @white;
 		font-size: 24px;
+		text-transform: uppercase;
 		letter-spacing: 2px;
-		padding-top: 30px;
+		padding-top: 50px;
 		font-family: 'Gotham Pro Bold', sans-serif;
-
 	}
+
 	p {
-		text-align: center;
-		color: @white;
 		font-size: 21px;
 		font-family: 'Gotham Pro Medium', sans-serif;
-		padding-bottom: 100px;
+		padding-bottom: 20px;
+
 	}
 }
 
-.col-1 {
-	background-image: url('../images/lamp.png');
-	background-repeat: no-repeat;
-	background-position: 50% 10%;
-	background-size: 230px;
-	
+.col1 {
+	background: url(../images/lamp.png) 50% 50% no-repeat;
 }
 
-.col-2 {
-	background: url('../images/star.png') 50% 20% no-repeat;
-	background-size: 250px;
+.col2 {
+	background: url(../images/star.png) 50% 70% no-repeat;
 }
 
-.col-3 {
-	background: url('../images/tools.png') 50% 10% no-repeat;
-	background-size: 250px;
+.col3 {
+	background: url(../images/tools.png) 50% 40% no-repeat;
 }
+
 
 .bomb {
 	position: absolute;
-	top: 0;
 	right: 0;
-	max-width: 100%
+	top: 0;
 }
+
+
+/*  конец третьего экрана */
+
+
+/*  четвертый экран */
 
 .sec-4 {
 	position: relative;
-	padding-bottom: 125px;
-	h2 {
-		margin-bottom: 10px;
+	text-align: center;
+	padding-bottom: 70px;
+
+	.img-4 {
+		position: absolute;
+		top: -60px;
+		left: 15px;
 	}
 
+	h2 {
+		color: @h-col;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		line-height: 1;
+	}
 	.h3 {
 		margin-top: 0;
-		text-align: center;
+		padding-top: 10px;
+		color: @h3-col;
 		font-family: 'Gotham Pro Medium', sans-serif;
 		font-size: 16px;
-		color: @light-gray;
+		padding-bottom: 50px;
+	}
+
+	
+	h3 {
+		color: @black;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		font-size: 14px;
+		font-family: 'Gotham Pro Black', sans-serif;
+
+	}
+	
+	.card {
+		margin-top: 50px;
+		border: 1px solid #fff;
+		border-radius: 5px;
+		p {
+		color: @h3-col;
+		font-size: 14px;
+		font-family: 'Gotham Pro Medium', sans-serif;
+		}
+		
+		.img-wrap {
+			height: 260px;
+			position: relative;
+			img {
+				position: absolute;
+				right: -15px;
+				bottom: 0;
+			}
+		}
+
+		.prise {
+		font-family: 'Arvo', serif;
+		font-size: 60px;
+		color: @black;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 24px;
+		}
+
+		&:hover {
+		border: 1px solid #a1a1a1;
+		background-color: @card-bg;
+		.btn-card {
+			background-color: @red;
+			&:hover {
+				background-color: @red-btn;
+			}
+		}
+		}
+
+		.btn-card {
+			margin-bottom: 37px;
+			/*height: 47px;
+			width: 161px;
+			padding-top: 16px;*/
+		}
+
+
+
+	}
+
+	 
+}
+
+/*  конец четвертого экрана */
+
+/*  начало пятого экрана */
+
+.sec-5 {
+	text-align: center;
+	position: relative;
+
+	h2 {
+		color: @h-col;
+		text-transform: none;
+		font-size: 60px;
+		line-height: 1;
+		position: relative;
+		z-index: 300;
 		margin-bottom: 100px;
 	}
 }
 
-.pen-4 {
-	position: absolute;
-	left: 20px;
-	top: -60px;
-}
-
-.img-wrap {
-	position: relative;
-	height: 300px;
-	img {
-		position: absolute;
-		bottom: 0;
-		left: 20%;
-		width: 250px;
-	}
-}
-
-.ticket {
-	box-sizing: border-box;
-	text-align: center;
-	
-	padding-bottom: 91px;
-	&:hover {
-		border: 1px solid #a1a1a1;
-		border-radius: 5px;
-		margin-top: -1px;
-		box-shadow: 0 0 5px rgba(100,100,100,0.2);
-		background-color: #595959;
-		padding-bottom: 35px;
-		.tick-btn {
-			display: inline-block;
-			
-		}
-		h3 {
-			color: @white;
-		}
-	}
-	
-	h3 {
-		color: @dark-grey;
-		font-size: 14px;
-		text-transform: uppercase;
-		font-family: 'Gotham Pro Black', sans-serif;
-		letter-spacing: 3px;
-	}
-	p {
-		color: @light-gray;
-		font-family: 'Gotham Pro Medium', sans-serif;
-		font-size: 14px;
-		line-height: 26px;
-		
-
-	}
-	.price {
-			font-family: 'Arvo', serif;
-			font-size: 60px;
-			color: @dark-grey;
-			margin-top: 30px;
-			
-
-}
-}
-
-.tick-btn {
-	background-color: @red;
-	padding: 19px 47px;
-	
-	border-radius: 30px;
-	display: none;
-	&:hover {
-		background-color: red;
-		box-shadow: 0 5px 10px rgba(200,0,0,0.3);
-	}
-
-}
-
-.sec-5 {
-	position: relative;
-	h2 {
-		font-size: 60px;
-		text-transform: none;
-		position: relative;
-		z-index: 100;
-		padding-bottom: 100px;
-	}
-	
-}
-
 .paper {
-		position: absolute;
-		top: 50px;
-		width: 800px;
-		z-index: 50;
-		left:20%
-
-	}
-
-footer {
-	
-	height: 450px;
-	background-color: @bg-2;
-	.copy {
-		padding-top: 340px;
-		
-		font-size: 12px;
-		font-family: 'Gotham Pro Medium', sans-serif;
-
-	}
-
-}
-.fa-circle {
-	color: #9fa2a5;
-}
-.social {
-	padding-top: 290px;
-	text-align: right;
-	a:hover {
-		.fa-circle {
-	color: @red;
-}
-	}
-}
-
-
- .card {
- 	text-align: right;
- 	margin-top: 15px;
- 	a {
- 		margin-left: 5px;
- 	}
- }
-
-
-.form-5 {
-	top: -25px;
-	position: relative;
-	z-index: 300;
-	margin: auto;
+	position: absolute;
 	display: block;
-	width: 312px;
-	height: 50px;
+	margin: auto;
+	padding-left: 50px;
+	top:50px;
+	max-width:100%;
+}
+
+
+.form1 {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	margin: auto;
+	margin-bottom: -25px;
+	z-index: 301;
+	display: block;
+	height: 49px;
+	width: 313px;
 	background: url('../images/form-bg.png') 50% 50% no-repeat;
-	.input {
+	.email {
+		vertical-align: middle;
+		margin: 0;
+		padding: 0;
+		margin-top: -1px;
+		height: 40px;
 		width: 230px;
-		height: 42px;
-		margin-top: 5px;
-		margin-left: 32px;
+		margin-left: 30px;
 		border: none;
 		padding-left: 20px;
 		font-size: 16px;
 	}
 	.btn-form {
-		width: 42px;
-		height: 42px;
 		background-color: @red;
 		border: none;
+		height: 41px;
+		width: 44px;
+		margin-top: 4px;
 		border-top-right-radius: 5px;
 		border-bottom-right-radius: 5px;
-		float: right;
-		margin-top: 5px;
-		margin-right: 4px;
-		&:hover {
-		background-color: red;
-		box-shadow: 0 0 10px rgba(200,0,0,0.3);
-	}
-
-	}
-
-	.fa-envelope-o {
 		color: @white;
+		transition: all 0.5s;
+		&:hover {
+			background-color: @red-btn;
+			box-shadow: 0 0  7px @red-btn;
+		}
+	}
+
+}
+
+/*  конец пятого экрана */
+
+/*  начало футера */
+
+footer {
+	
+	background-color: @foot-bg;
+
+	.row {
+		margin-top: 316px;
+		
+	}
+
+	.social-icon {
+		text-align: right;
+		a {
+			color: @h3-col;
+			&:hover {
+				color: @red;
+			}
+		}
+		/*.instagramm:hover {
+		color: red;
+	}*/
+	}
+
+
+}
+
+.banking {
+	margin-top: 20px;
+	margin-bottom: 45px;
+	text-align: right;
+	a {
+		margin-left: 5px;
+	}
+
+}
+
+.copy {
+	padding-top: 40px;
+}
+
+/*  конец футера */
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.bomb {
+		width: 600px;
 	}
 }
 
-@media (max-width: 1200px) {
-	.sec-3 h2 {
-		padding-top: 130px;
-	}
-
-}
-
-@media (max-width: 992px) {
-	h1, h2 {
-		font-size: 80px;
-	}
+/* Portrait tablets and small desktops */
+@media  (max-width: 991px) {
 	.logo {
-		margin-left: 10px;
-	}
-	.cart {
-		margin-right: 10px;
+		margin-left: 0px;
 	}
 
-	.p-cont {
-		background-color: rgba(256,256,256, 0.2);
-		padding: 10px;
+	.cart {
+		margin-right: 0;
+	}
+
+	.menu li {
+		margin: 0 10px;
+		a {
+			letter-spacing: 1px;
+		}
+	}
+
+	header h1 {
+		font-size: 70px;
+	}
+
+	.sec-2-cont {
+		background-color: rgba(244, 244, 244, 0.3);
+		padding:20px 10px;
 		border-radius: 5px;
 	}
-
-	.sec-3 h2 {
-		padding-top: 200px;
-	}
-
-	.sec-5 h2 {
-		font-size: 46px;
-	}
-
-	.paper {
-		width: 600px;
-		left:10%;	
-	}
-}
-
-@media (max-width: 768px) { 
-	h1, h2 {
+	h2 {
 		font-size: 60px;
 	}
-
-	.logo, .cart {
-		margin-top: 0;
-		padding-top: 0;
+	.bomb {
+		width: 500px;
 	}
 
-	.menu {
-		margin-top: 10px;
-		margin-bottom: 20px;
-		li {
-			margin: 0 10px;
-		}
-	}
-	.col-1, .col-2, .col-3 {
-		padding-bottom: 50px;
-		p {
-			width: 70%;
-			margin: auto;
-		}
-	}
-
-	.pen-4 {
+	.sec-4 .img-4 {
 		width: 250px;
-		margin-top: 17px;
+		top: -42px;
 	}
-
 	.sec-5 h2 {
-		font-size: 36px;
+		font-size: 40px;
 	}
 
 	.paper {
-		width: 500px;
-		left:10%;	
+		top: 20px;
+		width: 600px;
 	}
-
+	footer .row {
+		margin-top: 216px;
+		
+	}
 }
 
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	header h1 {
+		font-size: 50px;
 
-@media (max-width: 576px) {
-	h1, h2 {
-		font-size: 42px;
 	}
+	h2 {
+		font-size: 50px;
+	}
+	.sec-3 h2 {
+		padding-top: 60px;
+	}
+	.bomb {
+		width: 400px;
+	}
+
+	.sec-5 h2 {
+		font-size: 30px;
+		padding: 0 20px;
+	}
+	footer .social-icon {
+		text-align: left;
+	}
+
+	footer .banking {
+		text-align: left;
+	}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 520px) {
 	.menu li {
 		margin: 0 5px;
 		a {
-		font-size: 12px;
-		letter-spacing: 0;
+			letter-spacing: 0;
+			font-size: 12px;
+		}
 	}
+
+	header h1 {
+		font-size: 40px;
 	}
-	.sec-4 h2 {
-		margin-top: 70px;
+
+	h2 {
+		font-size: 35px;
 	}
+	.bomb {
+		width: 300px;
+	}
+
+	.sec-4 .img-4 {
+		width: 200px;
+		top: -34px;
+	}
+
+	footer .row {
+		margin-top: 150px;
+		
+	}
+
 	.paper {
-		width: 100%;
-		left:0;	
+		top: 80px;
 	}
 }
-
 
 
 
