@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-    background-image: url('../video/Love-Coding.jpg');
+    background: #eee url('../img/Love-Coding.jpg');
 }
 
 h1 {
