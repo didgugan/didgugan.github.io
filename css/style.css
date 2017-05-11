@@ -1,3 +1,7 @@
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +16,7 @@ html, body {
     letter-spacing: 1px;
     text-align: center;
     font-weight: 300;
+    background-color: #111;
 }
 
 
@@ -70,7 +75,7 @@ h2 {
     color:#FFB03B;
     display: inline-block;
     padding: 7px 20px;
-    background-color: #468966;
+    background-color: #E74C3C;
     text-decoration: none;
     -webkit-border-radius: 5px;
             border-radius: 5px;
@@ -79,7 +84,7 @@ h2 {
 
 .info-btn:hover {
     color: #FFF0A5;
-    background-color: #25A35F;
+    background-color: #3498DB;
 
 }
 p {
@@ -104,5 +109,8 @@ p {
 
 .social a:hover {
     color: #FFF0A5;
-    background-color: rgba(200,200,200,  0.2);
+    background-color: #3498DB;
 }
+
+
+
