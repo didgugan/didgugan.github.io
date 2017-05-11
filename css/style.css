@@ -14,7 +14,9 @@ html, body {
     font-weight: 300;
 }
 
-background-image: url('../video/Love-Coding.jpg');
+body {
+    background-image: url('../video/Love-Coding.jpg');
+}
 
 h1 {
     padding-top: 50px;
