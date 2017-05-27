@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>программа курса по верстке</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Первые 2 недели курса. Теория. </h1>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#development" data-toggle="tab">Подготовка среды</a>
+          </li>
+          <li><a href="#html_lesson" data-toggle="tab">HTML</a>
+          </li>
+          <li><a href="#css_lesson" data-toggle="tab">CSS</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="development">
+            <br>
+            <h3>Занятие посвящено установке программ, плагинов и изучение работы с ними.</h3>
+            <br>
+            <h4>Текстовые редакторы</h4>
+
+            <p>
+              Уже давно никто не верстает в блокноте. Это глупо, потому что есть множество бесплатных программ для верстальщиков, которые очень сильно расширяют функционал и автоматизируют многие рутинные задачи.
+            </p>
+            <p>
+              есть 3 основных разряда текстовых редакторов:
+              <ol>
+                <li>Простые текстовые редакторы (блокнот, notepad++, vim ...)</li>
+                <li>Простые и легкие текстовые редакторы для верстки (brackets, sublimetext, atom ...)</li>
+                <li>IDE Интегрированная среда разработки</li>
+              </ol>
+              Думаю вы уже догадались что наш вариант это второй пункт из этого списка. С редакторами 1-го пункта нам работать будет не удобно, 3-й пункт — слишком тяжеловесные и медленные, а 2-й это именно наш вариант.
+            </p>
+            <p>
+              Текстовые редакторы по типу Microsoft Word нам не подходят так как они имеют свой собственный формат файлов и не подходят для верстки.
+            </p>
+
+            <p>
+              В этом блоке мы с вами установим 3 текстовых редактора, нужные плагины для верстальщика и немного изучим их возможности.
+            </p>
+            <p>
+              Так же мы установим программу для быстрых скриншотов и познакомимся с github
+            </p>
+
+
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+											Текстовый редактор brackets
+										</a>
+									</h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse ">
+                  <div class="panel-body">
+                    <p><a class="links alert-link" href="http://brackets.io/" target="_blank">скачать</a> 
+                      <a class="links" href="https://habrahabr.ru/post/242623/" target="_blank">статья на хабре</a>
+                      <a class="links" href="https://ru.wikipedia.org/wiki/Adobe_Brackets" target="_blank">вики</a>
+
+                    </p>
+                    <p>
+                      Brackets – хороший текстовый редактор от компании Adobe. У него есть свои плюсы и минусы.
+                    </p>
+                    <p>
+                      К плюсам отнесу то, что он хорош для старта в веб-разработке. Так как в нем много всего работает уже из коробки. Подсветка выделенного фрагмента кода, автозаполнение путей, live Preview, и простота установки плагинов. Это отлично подходит для знакомства
+                      с версткой.
+
+                    </p>
+                    <p>
+                      К минусам я отнесу то что он достаточно тормозной и иногда глючный и в нем удобно работать только в одном файле или на чистом css без препроцессоров.
+                    </p>
+                    <p>
+                      Именно поэтому я рекомендую пользоваться этим редактором кода в первую и вторую неделю нашего курса.
+                    </p>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rh_H5B7OQ5s" frameborder="0" allowfullscreen></iframe>
+
+                    <p>
+                      Универсальные горячие клавиши: <code>ctrl + N</code> — создать новый файл, <code>ctrl + S</code> – сохранить файл.
+                    </p>
+                    <p>
+                      Вызвать стили для элемента или выбор цвета — <code>ctrl + E</code>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+											Текстовый редактор SublimeText3
+										</a>
+									</h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      <a class="links alert-link" href="https://www.sublimetext.com/3" target="_blank">скачать</a>
+                      <a class="links" href="https://packagecontrol.io/installation" target="_blank">package control</a>
+                      <a class="links" href="https://ru.wikipedia.org/wiki/Sublime_Text" target="_blank">вики</a>
+                      <a class="links" href="http://www.sublimetext.ru/documentation/hotkeys/windows" target="_blank">горячие клавиши</a>
+                    </p>
+                    <p>
+                      SublimeText3 является на данный момент моим любимым текстовым редактором. Но это чисто субьективное мнение. Вы должны сделать собственный выбор самостоятельно. Огромное количество разработчиков пользуются другими текстовыми редакторами.
+                    </p>
+                    <p>
+                      SublimeText в отличие от brackets нуждается в первоначальной настройке для нормальной работы. В самом начале нужно установить <code>package control</code> - это плагин который позволяет устанавливать плагины.
+                    </p>
+                    <p>
+                      Идем на официальный сайт <a href="https://packagecontrol.io/installation">package control</a> и копируем там код
+                    </p>
+                    <img class="img-responsive" src="img/packagecontrol.png" alt="">
+
+                    <p>
+                      После этого открываем саблайм текст и открываем в нем консоль комбинацией клавиш <code>ctrl + ~</code>, вставляем в нее скопированный код и нажимаем <code>enter</code>. Дожидаемся пока плагин полностью установиться и перезапускаем
+                       sublime text.
+                    </p>
+                    <p>
+                      Теперь вызываем <b>package control</b> с помощью горячих клавиш <code>ctrl + shift + P</code> и начинаем писать слово <code>install</code>. В поиске должно будет высветиться <b>Package Control: Install Package</b>. Кликаем по нему мышкой
+                      и у нас откроется установщик пакетов. Перове что нужно установить это <code>Emmet</code>. Для этого напишем его название в поиске и кликнем мышкой на найденный пакет, после чего пойдет установка эммета. Дальше подобным образом мы
+                      устанавливаем все нужные нам плагины.
+                    </p>
+                    <p>
+                      Список обязательных плагинов:
+                      <ul>
+                        <li>Emmet</li>
+                        <li>All Autocomplete</li>
+                        <li>AutoFileName</li>
+                        <li>BracketHightlighter</li>
+                        <li>ColorPicker</li>
+                        <li>Less</li>
+
+                      </ul>
+                    </p>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_eaz2aHKv6A" frameborder="0" allowfullscreen></iframe>
+
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+											Текстовый редактор Atom
+										</a>
+									</h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      <a class="links alert-link" href="https://atom.io" target="_blank">скачать</a>
+                      <a class="links" href="https://ru.wikipedia.org/wiki/Atom_(текстовый_редактор)" target="_blank">вики</a>
+                      <a class="links" href="http://blog.harrix.org/article/6076" target="_blank">настройка atom</a>
+                    </p>
+                    <p>
+                      Текстовый редактор Atom — это еще один пример отличного редактора кода для верстки. Это редактор от создателей Github.
+                    </p>
+                    <p>
+                      Он отличается очень хорошо настраиваемым внешним видом, огромным количеством плагинов и хорошей и простой интеграцией с github
+                    </p>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s7Zt3xkvmJw" frameborder="0" allowfullscreen></iframe>
+
+                  </div>
+                </div>
+              </div>
+              <!-- начало одного блока аккордеона -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+											Программы для скриншотов
+										</a>
+									</h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+
+                      <a class="links" href="http://joxi.ru" target="_blank">joxi</a>
+                      <a class="links" href="https://gyazo.com" target="_blank">gyazo</a>
+                      <a class="links" href="https://disk.yandex.ru/download/#pc" target="_blank">яндекс диск</a>
+                    </p>
+                    <p>
+                      Скриншот – хороший способ по быстрому показать что-то или попросить помощи в определенном участке кода.
+                    </p>
+                    <p>
+                      Есть различные программы для скриншотов. Короткое видео на эту тему.
+                    </p>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AdaToeIwYnk" frameborder="0" allowfullscreen></iframe>
+
+                  </div>
+                </div>
+              </div>
+              <!-- конец одного блока аккордеона -->
+
+              <!-- начало одного блока аккордеона -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+											Работа с emmet
+										</a>
+									</h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+
+                      <a class="links" href="https://emmet.io" target="_blank">emmet.io</a>
+                      <a class="links" href="https://docs.emmet.io/abbreviations/syntax/" target="_blank">документация emmet</a>
+                      <a class="links" href="https://habrahabr.ru/post/175747/" target="_blank">статья на хабре</a>
+                      <a class="links" href="https://docs.emmet.io/cheat-sheet/" target="_blank">полный список сокращений emmet</a>
+                    </p>
+                    <p>
+                      emmet – самый полезный плагин для веб-разработчика. Он позволяет сильно ускорить процесс разработки.
+                    </p>
+                    <p>
+                      Работает он следующим образом: вы пишете сокращение и нажимаете клавишу <code>tab</code> и получаете в результате заданный кусок кода.
+                      <br>Например: пишем в редакторе <b>h1</b>, нажимаем <code>tab</code> и получаем &#x3C;h1&#x3E; &#x3C;h1&#x3E;
+                    </p>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/93x1rYIenyY" frameborder="0" allowfullscreen></iframe>
+
+                  </div>
+                </div>
+              </div>
+              <!-- конец одного блока аккордеона -->
+
+              <!-- начало одного блока аккордеона -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+											Знакомство с github
+										</a>
+									</h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+
+                      <a class="links" href="https://github.com" target="_blank">github</a>
+
+                    </p>
+                    <p>
+                      Скриншот – хороший способ по быстрому показать что-то или попросить помощи в определенном участке кода.
+                    </p>
+                    <p>
+                      Есть различные программы для скриншотов. Короткое видео на эту тему.
+                    </p>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rBvW1GWtzMY" frameborder="0" allowfullscreen></iframe>
+
+                  </div>
+                </div>
+              </div>
+              <!-- конец одного блока аккордеона -->
+
+            </div>
+            <!-- конец аккордеона -->
+
+
+
+          </div>
+          <!-- панель уроков по html -->
+          <div class="tab-pane" id="html_lesson">
+            <p>
+              Для продолжения обучения пожалуйста обратитесь к <a href="https://vk.com/didgugan">преподавателю курса</a>.
+            </p>
+          </div>
+          <!-- панель уроков по css -->
+          <div class="tab-pane" id="css_lesson">
+            <p>
+              Для продолжения обучения пожалуйста обратитесь к <a href="https://vk.com/didgugan">преподавателю курса</a>.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="js/libs.min.js"></script>
+</body>
+
+</html>
