@@ -73,19 +73,21 @@ h2 {
 }
 
 .info-btn {
-    margin-top: 20px;
-    color:#FFB03B;
+    margin-top: 30px;
+    margin-right: 15px;
+    font-size: 18px;
+    color:#fff;
     display: inline-block;
-    padding: 7px 20px;
+    padding: 15px 30px;
     background-color: #E74C3C;
     text-decoration: none;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
+    -webkit-border-radius: 40px;
+            border-radius: 40px;
 }
 
 
 .info-btn:hover {
-    color: #FFF0A5;
+    color: #000;
     background-color: #3498DB;
 
 }
