@@ -1,0 +1,87 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body, html {
+	height: 100%;
+}
+
+.left {
+	width: 50%;
+	height: 100%;
+	background-color: #fac51c;
+	float: left;
+}
+
+
+.right {
+	width: 50%;
+	height: 100%;
+	background-color: #9365b8;
+	float: right;
+}
+
+.wrapper {
+	background-color: #fff;
+	border-radius: 8px;
+	width: 70%;
+	height: 70%;
+	margin: 15% auto;
+	-webkit-box-shadow: 0px 21px 76px -25px rgba(0,0,0,0.48);
+	-moz-box-shadow: 0px 21px 76px -25px rgba(0,0,0,0.48);
+	box-shadow: 0px 21px 76px -25px rgba(0,0,0,0.48);
+}
+
+.wrap_left {
+	background: #fff url(../img/min1.png) bottom left no-repeat;
+	background-size: auto 70%;
+	position: relative;
+	.content {
+		position: absolute;
+		right: 20px;
+		bottom: 30px;
+		h1 {
+			color: #fac51c;
+		}
+	}
+}
+
+.wrap_right {
+	background: #fff url(../img/min2.jpg) bottom right no-repeat;
+	background-size: auto 100%;
+	position: relative;
+	.content {
+		position: absolute;
+		left: 20px;
+		top: 40%;
+		width: 50%;
+		h1 {
+			color: #9365b8;
+		}
+	}
+}
+
+
+h1 {
+	font-family: 'Yeseva One', cursive;
+	font-size: 46px;
+	margin-bottom: 5px;
+}
+
+p {
+	text-transform: uppercase;
+	font-family: sans-serif;
+	letter-spacing: 0.5px;
+	color: #777;
+	font-size: 14px;
+}
+
+.content {
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+
+
